@@ -182,9 +182,6 @@ It demonstrates:
 PYTHONPATH=src pytest -q
 ```
 
-## What I would say in an interview
-
-> I built ClientOps Desk as a product mockup for a fictionalized family B2B service business. I wanted it to feel like a real internal tool, not an AI chatbot. It brings client context, historical precedents, next-best actions, and escalation drafting into one workspace. I deliberately designed it so that routine cases are handled quickly, vague cases ask for better information, and new or sensitive cases become clean internal handoffs rather than overconfident answers.
 
 ## Supporting docs
 
