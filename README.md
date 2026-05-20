@@ -1,6 +1,6 @@
 # ClientOps Desk
 
-> **A polished B2B operations workspace mockup that helps a client-facing team resolve recurring requests faster, ask for missing facts before creating noise, and generate structured internal handoffs for genuinely new cases.**
+> **A B2B operations workspace mockup that helps a client-facing team resolve recurring requests faster, ask for missing facts before creating noise, and generate structured internal handoffs for genuinely new cases.**
 
 ![ClientOps Desk demo](assets/demo.gif)
 
