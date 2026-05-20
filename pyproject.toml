@@ -1,0 +1,9 @@
+[project]
+name = "clientops-desk"
+version = "1.0.0"
+description = "A production-style B2B client operations workspace with retrieval, decisioning, and escalation handoffs."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

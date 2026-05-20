@@ -1,0 +1,14 @@
+{
+  "client_id": "alpina-pharma",
+  "client_company": "Alpina Pharma SA",
+  "requester_name": "Mélanie Faure",
+  "requester_role": "Office Services Coordinator",
+  "channel": "email",
+  "subject": "Can we change next Tuesday’s delivery quantities?",
+  "message": "We need to reduce next Tuesday’s office meal order by 18 portions because one department moved its workshop online. Are we still within the modification window or do we need an exception?",
+  "metadata": {
+    "order_id": "ORD-2026-0519-TUE",
+    "delivery_date": "2026-05-26",
+    "requested_delta": "-18 portions"
+  }
+}

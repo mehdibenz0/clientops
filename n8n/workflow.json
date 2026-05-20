@@ -1,0 +1,142 @@
+{
+  "name": "ClientOps Desk - Analyze B2B Client Request",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "clientops-intake",
+        "httpMethod": "POST",
+        "responseMode": "lastNode"
+      },
+      "id": "Webhook",
+      "name": "Webhook Intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/analyze",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.body || $json }}"
+      },
+      "id": "Analyze",
+      "name": "Analyze Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.lane }}",
+              "rightValue": "CREATE_INTERNAL_TASK",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "Route",
+      "name": "Internal Task Needed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        20,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}"
+      },
+      "id": "ReturnStandard",
+      "name": "Return Resolution Packet",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        320,
+        -110
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\"status\":\"task_drafted\",\"packet\":$json} }}"
+      },
+      "id": "ReturnTask",
+      "name": "Return Task Draft",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        320,
+        120
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Intake": {
+      "main": [
+        [
+          {
+            "node": "Analyze Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze Request": {
+      "main": [
+        [
+          {
+            "node": "Internal Task Needed?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Internal Task Needed?": {
+      "main": [
+        [
+          {
+            "node": "Return Task Draft",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return Resolution Packet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "clientops-desk-1"
+}

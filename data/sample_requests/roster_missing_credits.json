@@ -1,0 +1,14 @@
+{
+  "client_id": "leman-consulting",
+  "client_company": "Léman Consulting SA",
+  "requester_name": "Claire Dubois",
+  "requester_role": "HR Operations Manager",
+  "channel": "email",
+  "subject": "Three new employees are missing their lunch credits",
+  "message": "We added 12 employees this week, but only 9 received their monthly lunch credits. Could you check the three missing profiles? They appear in our latest roster export.",
+  "metadata": {
+    "employee_reference": "3 affected profiles",
+    "roster_batch": "MAY-W3",
+    "added_this_week": true
+  }
+}

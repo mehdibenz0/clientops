@@ -1,0 +1,104 @@
+[
+  {
+    "client_id": "leman-consulting",
+    "company": "Léman Consulting SA",
+    "segment": "Mid-market professional services",
+    "plan": "Corporate Lunch Wallet — CHF 80 / employee",
+    "enrolled_employees": 84,
+    "monthly_budget_chf": 6720,
+    "account_health": "Stable",
+    "last_roster_update": "2026-05-17",
+    "renewal_window": "November 2026",
+    "open_requests": 1,
+    "relationship_owner": "Maya R.",
+    "account_notes": [
+      "12 employees added during the current month.",
+      "One prior roster synchronization question in February."
+    ]
+  },
+  {
+    "client_id": "montreux-digital",
+    "company": "Montreux Digital AG",
+    "segment": "Scale-up technology",
+    "plan": "Hybrid Lunch Access + partner cafés",
+    "enrolled_employees": 126,
+    "monthly_budget_chf": 10080,
+    "account_health": "Watchlist: higher request volume",
+    "last_roster_update": "2026-05-19",
+    "renewal_window": "September 2026",
+    "open_requests": 3,
+    "relationship_owner": "Nicolas T.",
+    "account_notes": [
+      "Several employee questions about partner merchant scope.",
+      "Contract expansion discussed for Q3."
+    ]
+  },
+  {
+    "client_id": "alpina-pharma",
+    "company": "Alpina Pharma SA",
+    "segment": "Healthcare manufacturer",
+    "plan": "Weekly office meal coordination",
+    "enrolled_employees": 210,
+    "monthly_budget_chf": 18900,
+    "account_health": "Healthy",
+    "last_roster_update": "2026-05-16",
+    "renewal_window": "January 2027",
+    "open_requests": 0,
+    "relationship_owner": "Sophie L.",
+    "account_notes": [
+      "Uses weekly cutoff exceptions occasionally.",
+      "Ops team prefers concise email confirmation."
+    ]
+  },
+  {
+    "client_id": "vaud-engineering",
+    "company": "Vaud Engineering SA",
+    "segment": "Industrial services",
+    "plan": "Monthly meal credit program",
+    "enrolled_employees": 59,
+    "monthly_budget_chf": 3540,
+    "account_health": "Stable",
+    "last_roster_update": "2026-05-12",
+    "renewal_window": "December 2026",
+    "open_requests": 2,
+    "relationship_owner": "Amina B.",
+    "account_notes": [
+      "Billing contact recently changed.",
+      "Finance requests often arrive with limited detail."
+    ]
+  },
+  {
+    "client_id": "helvetia-labs",
+    "company": "Helvetia Labs",
+    "segment": "Life sciences",
+    "plan": "Personalized dietary meal service",
+    "enrolled_employees": 47,
+    "monthly_budget_chf": 4230,
+    "account_health": "Stable",
+    "last_roster_update": "2026-05-18",
+    "renewal_window": "October 2026",
+    "open_requests": 1,
+    "relationship_owner": "Jules P.",
+    "account_notes": [
+      "Dietary preference changes are often made late in the week.",
+      "Manager values preview accuracy before order lock."
+    ]
+  },
+  {
+    "client_id": "romandie-mobility",
+    "company": "Romandie Mobility SA",
+    "segment": "Transportation",
+    "plan": "Corporate wallet with refund handling",
+    "enrolled_employees": 188,
+    "monthly_budget_chf": 15040,
+    "account_health": "Attention: payments question open",
+    "last_roster_update": "2026-05-15",
+    "renewal_window": "August 2026",
+    "open_requests": 2,
+    "relationship_owner": "Luca M.",
+    "account_notes": [
+      "Recent questions about reversed transactions.",
+      "Payment issues should be escalated with ledger context."
+    ]
+  }
+]

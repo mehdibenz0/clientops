@@ -1,0 +1,14 @@
+{
+  "client_id": "romandie-mobility",
+  "client_company": "Romandie Mobility SA",
+  "requester_name": "Nadia Keller",
+  "requester_role": "Benefits & Finance Lead",
+  "channel": "email",
+  "subject": "Refunded transaction appears reversed but balance is not restored",
+  "message": "A lunch order was refunded by the merchant two days ago. The reversal appears in our transaction export, but the employee’s available wallet balance has not gone back up. We do not know whether this delay is expected or whether something is stuck.",
+  "metadata": {
+    "employee_reference": "EMP-7704",
+    "transaction_id": "TX-REF-9012",
+    "observed_delay_hours": 48
+  }
+}

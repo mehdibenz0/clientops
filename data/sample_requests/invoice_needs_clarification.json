@@ -1,0 +1,10 @@
+{
+  "client_id": "vaud-engineering",
+  "client_company": "Vaud Engineering SA",
+  "requester_name": "Marc Favre",
+  "requester_role": "Finance Contact",
+  "channel": "form",
+  "subject": "Invoice looks wrong this month",
+  "message": "Our invoice looks wrong this month. Please help.",
+  "metadata": {}
+}

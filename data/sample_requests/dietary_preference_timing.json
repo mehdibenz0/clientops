@@ -1,0 +1,14 @@
+{
+  "client_id": "helvetia-labs",
+  "client_company": "Helvetia Labs",
+  "requester_name": "Sarah Nguyen",
+  "requester_role": "Office Manager",
+  "channel": "email",
+  "subject": "Vegetarian changes not visible in the order preview",
+  "message": "Two employees changed their dietary preference to vegetarian late yesterday. This morning the next meal-order preview still shows the standard menu. Is the preview delayed or did we miss the weekly cutoff?",
+  "metadata": {
+    "employee_reference": "2 profiles",
+    "preview_cycle": "W22",
+    "preference_change_date": "2026-05-19"
+  }
+}

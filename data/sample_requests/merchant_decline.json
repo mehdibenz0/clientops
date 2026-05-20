@@ -1,0 +1,14 @@
+{
+  "client_id": "montreux-digital",
+  "client_company": "Montreux Digital AG",
+  "requester_name": "Theo Martin",
+  "requester_role": "People Operations Lead",
+  "channel": "chat",
+  "subject": "Employee meal wallet refused at a nearby café",
+  "message": "One employee says their lunch wallet was refused at a café near the office. They expected the balance to work there. Can you check whether this is a platform issue or a partner limitation?",
+  "metadata": {
+    "employee_reference": "EMP-8821",
+    "merchant_name": "Café du Parc",
+    "transaction_id": "TX-24051"
+  }
+}
